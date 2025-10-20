@@ -1,0 +1,31 @@
+name: RealisticHighlands2
+version: 1.0.0
+main: com.realistic_highlands2.RealisticHighlands2
+api-version: 1.21
+author: PluginGenerator
+description: Plugin enhancing world generation for realistic and vast landscapes with towering mountains, deep valleys, rivers, and natural lakes.
+
+commands:
+  highlandsReload:
+    description: Reloads the RealisticHighlands2 plugin configuration.
+    permission: realistic_highlands2.reload
+    usage: /highlandsReload
+  highlandsInfo:
+    description: Displays information about the RealisticHighlands2 plugin.
+    permission: realistic_highlands2.info
+    usage: /highlandsInfo
+  highlandsGenerateBiome:
+    description: Generates a chunk with a specific custom biome at the player's location. (Admin only, for testing)
+    permission: realistic_highlands2.generatebiome
+    usage: /highlandsGenerateBiome <biome_name>
+
+permissions:
+  realistic_highlands2.reload:
+    description: Permission for highlandsReload command
+    default: op
+  realistic_highlands2.info:
+    description: Permission for highlandsInfo command
+    default: op
+  realistic_highlands2.generatebiome:
+    description: Permission for highlandsGenerateBiome command
+    default: op
